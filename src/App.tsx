@@ -7,7 +7,7 @@ function App() {
 
   const callFunction = async () => {
     try {
-      const response = await fetch('http://localhost:7112/api/SimpleHelloFunction');
+      const response = await fetch('https://your-functionapp-name02.azurewebsites.net/api/GetAllOrdersFunction');
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
